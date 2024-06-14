@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body{
+    background-color: #dcdcdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 930px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+
+}
+.container img{
+    width: 50%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.container form{
+    width: 50%;
+}
+form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-control label{
+    display: block;
+    margin-bottom: 5px;
+}
+.form-control input, 
+.form-control textarea{
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 3px solid #65a5cd;
+    border-radius: 12px;
+    outline: none;
+}
+button{
+    width: 100%;
+    border: none;
+    background-color: #1d3557;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 19px;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: #457b9d;
+}
+.form-control{
+    position: relative;
+    margin-bottom: 15px;
+}
+.modal{
+    display: none;
+}
+
+@media screen and (max-width: 930px){
+    .container img {
+       display: none
+    }
+    .container form{
+        width: 100%;
+    }
+}
